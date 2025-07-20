@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logofasa.png';
 
 const Header = () => {
@@ -27,9 +28,9 @@ const Header = () => {
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
           <li>
-            <a href="#" className="hover:text-orange-500">
+            <Link to="/" className="hover:text-orange-500">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#" className="hover:text-orange-500">
@@ -42,18 +43,18 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-orange-500">
+            <Link to="/contactus" className="hover:text-orange-500">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         {/* Desktop Contact Us Button */}
-        <a
-          href="#"
+        <Link
+          to="/contactus"
           className="hidden md:inline-block bg-orange-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-orange-600 transition"
         >
           Contact Us <span className="ml-1">→</span>
-        </a>
+        </Link>
         {/* Hamburger Icon for Mobile */}
         <button
           className="md:hidden flex flex-col justify-center items-center w-10 h-10 ml-2"
@@ -79,12 +80,13 @@ const Header = () => {
         {/* Mobile Dropdown Menu */}
         {menuOpen && (
           <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded-b-lg z-20 flex flex-col items-center py-4 md:hidden animate-fade-in-down">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="py-2 text-gray-700 font-medium w-full text-center hover:text-orange-500"
+              onClick={() => setMenuOpen(false)}
             >
               Home
-            </a>
+            </Link>
             <a
               href="#"
               className="py-2 text-gray-700 font-medium w-full text-center hover:text-orange-500"
@@ -97,18 +99,20 @@ const Header = () => {
             >
               Services
             </a>
-            <a
-              href="#"
+            <Link
+              to="/contactus"
               className="py-2 text-gray-700 font-medium w-full text-center hover:text-orange-500"
+              onClick={() => setMenuOpen(false)}
             >
               Contact
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/contactus"
               className="mt-2 bg-orange-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-orange-600 transition w-11/12 text-center"
+              onClick={() => setMenuOpen(false)}
             >
               Contact Us <span className="ml-1">→</span>
-            </a>
+            </Link>
           </div>
         )}
       </nav>
