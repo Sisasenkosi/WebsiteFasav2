@@ -13,19 +13,33 @@ const Home = () => {
           <span className="bg-white/20 text-orange-300 font-semibold px-4 py-2 rounded mb-4 tracking-widest text-xs md:text-sm inline-block">
             SEAMLESS. SECURE. SMART.
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
             Smart Locker Solutions That Deliver Convenience
           </h1>
-          <p className="mb-6 text-lg text-gray-200">
+          <p className="mb-6 text-lg text-gray-200 text-left">
             Streamline your last-mile operations. Deliver multiple packages at a
             single smart locker hub and eliminate the need for redelivery. Save
             time, reduce costs, and improve delivery success rates.
           </p>
-          <div className="flex gap-4">
-            <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
-              Contact Us
-            </button>
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+          <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+            Contact Us
+          </button>
+        </div>
+      </section>
+      {/* Orange Card Section */}
+      <section className="flex justify-start md:justify-center mt-[-60px] z-20 relative px-4">
+        <div className="bg-orange-500 rounded-xl shadow-xl flex flex-col md:flex-row items-center md:items-start p-8 md:p-10 max-w-xl w-auto">
+          <div className="flex-1">
+            <div className="text-white font-semibold mb-2">Our Service</div>
+            <div className="text-white text-xl md:text-2xl font-bold mb-2">
+              Easy Integration with Delivery Partners
+            </div>
+            <div className="text-white mb-4 text-sm md:text-base">
+              We revolutionize how packages are collected, received, and
+              managed—with our intuitive, robust, and optimized smart locker
+              solutions.
+            </div>
+            <button className="bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
               Call Now For Service
             </button>
           </div>

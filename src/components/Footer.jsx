@@ -84,6 +84,30 @@ const Footer = () => (
             </a>
           </li>
         </ul>
+        {/* Newsletter and Copyright */}
+        <div className="max-w-7xl mx-auto flex flex-col items-center justify-center pt-25 gap-4">
+          <div className="flex flex-col md:flex-row items-center justify-center w-full gap-6">
+            {/* Newsletter */}
+            <div className="flex flex-col items-center w-full md:w-auto">
+              <div className="text-lg md:text-xl font-bold text-gray-800 mb-2 text-center">
+                Subscribe To Our Newsletter
+              </div>
+              <form className="flex w-full md:w-auto max-w-xl">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  className="px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400 text-base w-48 md:w-64 placeholder-gray-400 text-gray-800 flex-1"
+                />
+                <button
+                  type="submit"
+                  className="bg-orange-500 text-white px-6 py-3 rounded-r-lg font-semibold text-base hover:bg-orange-600 transition"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
       {/* Our Services */}
       <div>
@@ -97,16 +121,16 @@ const Footer = () => (
       </div>
       {/* Working Hours */}
       <div className="flex justify-center md:justify-start">
-        <div className="bg-white rounded-l shadow-lg px-4 py-2 mt-4 w-[600px]">
+        <div className="bg-white rounded-l shadow-lg px-2 py-2 mt-4 w-[700px]">
           <h4 className="font-semibold text-gray-800 mb-3">Working Hours</h4>
           <ul className="divide-y divide-gray-200 text-gray-600 text-sm">
             <li className="py-2 flex justify-between">
               <span>Mon-Fri</span>
-              <span>8:00 AM - 4:00 PM</span>
+              <span>8AM - 4PM</span>
             </li>
             <li className="py-2 flex justify-between">
               <span>Saturday</span>
-              <span>8:00 AM - 12:00 PM</span>
+              <span>8AM - 12PM</span>
             </li>
             <li className="py-2 flex justify-between">
               <span>Sunday</span>
@@ -116,36 +140,11 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    {/* Newsletter and Copyright */}
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mt-8 border-t border-gray-200 pt-6 gap-4">
-      <div className="w-full md:w-auto flex flex-col items-center md:items-start mb-2 md:mb-0">
-        <div className="text-lg md:text-xl font-bold text-gray-800 mb-2 text-center md:text-left">
-          Subscribe To Our Newsletter
-        </div>
-        <form className="flex w-full md:w-auto">
-          <input
-            type="email"
-            placeholder="Your email address"
-            className="px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400 text-base w-48 md:w-64 placeholder-gray-400 text-gray-800"
-          />
-          <button
-            type="submit"
-            className="bg-orange-500 text-white px-6 py-3 rounded-r-lg font-semibold text-base hover:bg-orange-600 transition"
-          >
-            Subscribe
-          </button>
-        </form>
-      </div>
+
+    {/* Copyright centered below the line */}
+    <div className="max-w-7xl mx-auto flex flex-col items-center justify-center mt-4 border-t border-gray-200 pt-6 gap-4">
       <div className="text-gray-500 text-xs text-center w-full flex justify-center">
         &copy; {new Date().getFullYear()} fasasmartech. All Rights Reserved.
-        &nbsp; | &nbsp;
-        <a href="#" className="hover:text-orange-500">
-          Terms & Conditions
-        </a>{' '}
-        &nbsp; | &nbsp;
-        <a href="#" className="hover:text-orange-500">
-          Privacy Policy
-        </a>
       </div>
     </div>
   </footer>
