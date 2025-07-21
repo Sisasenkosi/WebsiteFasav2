@@ -142,46 +142,232 @@ const Home = () => {
         </div>
       </section>
 
+      {/* About Us / Welcome Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
+          {/* Left: Image */}
+          <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+            <div className="relative">
+              <img
+                src="https://images.unsplash.com/photo-1515168833906-d2a3b82b1e1c?auto=format&fit=crop&w=400&q=80"
+                alt="Smart Locker"
+                className="rounded-xl w-72 h-56 object-cover shadow-lg"
+              />
+            </div>
+          </div>
+          {/* Right: Text */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center">
+            <div className="inline-block bg-black/5 text-blue-700 font-semibold px-4 py-1 rounded mb-2">
+              About Us
+            </div>
+            <h2 className="text-2xl md:text-3xl text-black font-bold mb-4">
+              Welcome to the Future of Deliveries
+            </h2>
+            <p className="text-gray-700 mb-4">
+              At Fasamartech, we're transforming the way packages are delivered
+              and received. Our intelligent locker solutions are designed to
+              eliminate delivery friction, save time, and maximize
+              convenience—for everyone involved in the logistics chain.
+            </p>
+            <ul className="mb-4 text-gray-700 text-sm space-y-2">
+              <li className="flex items-center">
+                <span className="bg-orange-500 rounded-full p-1 mr-2 flex-shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-3 w-3 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={4}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </span>
+                Experienced, Reliable, and Ready to Serve
+              </li>
+              <li className="flex items-center">
+                <span className="bg-orange-500 rounded-full p-1 mr-2 flex-shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-3 w-3 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={4}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </span>
+                Your dependable Partner for the Long Haul
+              </li>
+              <li className="flex items-center">
+                <span className="bg-orange-500 rounded-full p-1 mr-2 flex-shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-3 w-3 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={4}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </span>
+                Our Commitment to Quality
+              </li>
+              <li className="flex items-center">
+                <span className="bg-orange-500 rounded-full p-1 mr-2 flex-shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-3 w-3 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={4}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </span>
+                Serving You with Integrity
+              </li>
+            </ul>
+            <button className="bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition w-max">
+              Find out more
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-[#f7f1e9]">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-10">
             Why Choose Our Smart Lockers?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center">
-              <div className="text-4xl mb-2">🚚</div>
-              <div className="font-bold mb-1">Courier & Delivery Services</div>
-              <div className="text-gray-600 text-sm">
-                Efficient Last-Mile Delivery, Secure & Tamper-Proof, Seamless
-                Integration
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Card 1 */}
+            <div className="relative bg-white border border-orange-100 rounded-2xl p-8 flex flex-col min-h-[220px] shadow-md">
+              <div className="absolute -top-6 left-6 bg-[#f77c1c] text-white rounded-full w-14 h-14 flex items-center justify-center text-2xl shadow-md border-4 border-white">
+                🚚
               </div>
+              <h3 className="font-bold text-[#176ca7] text-lg mt-8 mb-3">
+                Courier & Delivery Services
+              </h3>
+              <ul className="text-gray-700 text-base space-y-2">
+                <li>
+                  <span className="font-semibold">
+                    Efficient Last-Mile Delivery
+                  </span>{' '}
+                  – Drop multiple packages in one trip, reducing failed
+                  deliveries and operational costs.
+                </li>
+                <li>
+                  <span className="font-semibold">Secure & Tamper-Proof</span> –
+                  Eliminate package theft with PIN/QR code access.
+                </li>
+                <li>
+                  <span className="font-semibold">Seamless Integration</span> –
+                  Compatible with major courier software for real-time tracking
+                  and notifications.
+                </li>
+              </ul>
             </div>
-            <div className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center">
-              <div className="text-4xl mb-2">🛒</div>
-              <div className="font-bold mb-1">For E-Commerce Businesses</div>
-              <div className="text-gray-600 text-sm">
-                Reduce Delivery Failure, Contactless & Sustainable, Branded
-                Pickup Experience
+            {/* Card 2 */}
+            <div className="relative bg-white border border-blue-100 rounded-2xl p-8 flex flex-col min-h-[220px] shadow-md">
+              <div className="absolute -top-6 left-6 bg-[#176ca7] text-white rounded-full w-14 h-14 flex items-center justify-center text-2xl shadow-md border-4 border-white">
+                🛒
               </div>
+              <h3 className="font-bold text-[#176ca7] text-lg mt-8 mb-3">
+                For E-Commerce Businesses
+              </h3>
+              <ul className="text-gray-700 text-base space-y-2">
+                <li>
+                  <span className="font-semibold">Reduce Delivery Failure</span>{' '}
+                  – Customers pick up orders at their convenience, lowering
+                  missed delivery rates.
+                </li>
+                <li>
+                  <span className="font-semibold">
+                    Contactless & Sustainable
+                  </span>{' '}
+                  – Cut down on redelivery attempts and optimize routes for a
+                  greener operation.
+                </li>
+                <li>
+                  <span className="font-semibold">
+                    Branded Pickup Experience
+                  </span>{' '}
+                  – Customizable locker with your logo for a professional touch.
+                </li>
+              </ul>
             </div>
-            <div className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center">
-              <div className="text-4xl mb-2">🏢</div>
-              <div className="font-bold mb-1">
+            {/* Card 3 */}
+            <div className="relative bg-white border border-orange-100 rounded-2xl p-8 flex flex-col min-h-[220px] shadow-md">
+              <div className="absolute -top-6 left-6 bg-[#f77c1c] text-white rounded-full w-14 h-14 flex items-center justify-center text-2xl shadow-md border-4 border-white">
+                🏢
+              </div>
+              <h3 className="font-bold text-[#176ca7] text-lg mt-8 mb-3">
                 For Property Managers & Offices
-              </div>
-              <div className="text-gray-600 text-sm">
-                Automated Package Management, Secure & Organized, Scalable
-                Solutions
-              </div>
+              </h3>
+              <ul className="text-gray-700 text-base space-y-2">
+                <li>
+                  <span className="font-semibold">
+                    Automated Package Management
+                  </span>{' '}
+                  – No more cluttered mailrooms or front desk bottlenecks.
+                </li>
+                <li>
+                  <span className="font-semibold">Secure & Organized</span> –
+                  Residents retrieve parcels anytime with a unique access code.
+                </li>
+                <li>
+                  <span className="font-semibold">Scalable Solutions</span> –
+                  Ideal for apartments, co-working spaces, and corporate
+                  campuses.
+                </li>
+              </ul>
             </div>
-            <div className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center">
-              <div className="text-4xl mb-2">👥</div>
-              <div className="font-bold mb-1">For End-Consumers</div>
-              <div className="text-gray-600 text-sm">
-                Automated Package Management, Secure & Organized, Scalable
-                Solutions
+            {/* Card 4 */}
+            <div className="relative bg-white border border-blue-100 rounded-2xl p-8 flex flex-col min-h-[220px] shadow-md">
+              <div className="absolute -top-6 left-6 bg-[#176ca7] text-white rounded-full w-14 h-14 flex items-center justify-center text-2xl shadow-md border-4 border-white">
+                👥
               </div>
+              <h3 className="font-bold text-[#176ca7] text-lg mt-8 mb-3">
+                For End-Consumers
+              </h3>
+              <ul className="text-gray-700 text-base space-y-2">
+                <li>
+                  <span className="font-semibold">
+                    Automated Package Management
+                  </span>{' '}
+                  – No more cluttered mailrooms or front desk bottlenecks.
+                </li>
+                <li>
+                  <span className="font-semibold">Secure & Organized</span> –
+                  Residents retrieve parcels anytime with a unique access code.
+                </li>
+                <li>
+                  <span className="font-semibold">Scalable Solutions</span> –
+                  Ideal for apartments, co-working spaces, and corporate
+                  campuses.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
