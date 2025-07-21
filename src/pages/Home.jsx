@@ -38,7 +38,11 @@ const Home = () => {
                 redelivery. Save time, reduce costs, and improve delivery
                 success rates.
               </p>
-              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+              <button
+                className="
+bg-[#0e6399]
+ text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition"
+              >
                 Contact Us &gt;
               </button>
             </div>
@@ -95,7 +99,7 @@ const Home = () => {
                   managed—with our intuitive, robust, and optimized smart locker
                   solutions.
                 </p>
-                <button className="bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
+                <button className="bg-[#0e6399] text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
                   Call Now For Service &gt;
                 </button>
               </div>
@@ -157,11 +161,8 @@ const Home = () => {
           </div>
           {/* Right: Text */}
           <div className="w-full md:w-1/2 flex flex-col justify-center">
-            <div className="inline-block bg-black/5 text-blue-700 font-semibold px-4 py-1 rounded mb-2">
-              About Us
-            </div>
             <h2 className="text-2xl md:text-3xl text-black font-bold mb-4">
-              Welcome to the Future of Deliveries
+              Welcome to the World of Endless Possibilities
             </h2>
             <p className="text-gray-700 mb-4">
               At Fasamartech, we're transforming the way packages are delivered
@@ -247,7 +248,11 @@ const Home = () => {
                 Serving You with Integrity
               </li>
             </ul>
-            <button className="bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition w-max">
+            <button
+              className="
+bg-[#0e6399]
+ text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition w-max"
+            >
               Find out more
             </button>
           </div>
@@ -367,49 +372,58 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="w-full bg-orange-500 rounded-lg my-8 flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-10 md:py-8 gap-8 md:gap-0">
-        <div className="flex-1 flex flex-col justify-center items-start">
-          <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
-            Book Your Appointment in Just a Few Clicks
-          </h3>
-          <p className="text-white mb-4 max-w-md">
-            Contact us today for fast, reliable service whether you're facing a
-            simple or complex need.
-          </p>
-          <div className="flex items-center mb-4">
-            <span className="bg-white text-orange-500 rounded-full p-3 mr-3 text-xl">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 5a2 2 0 012-2h2.28a2 2 0 011.7.95l1.6 2.6a2 2 0 01-.45 2.6l-.7.7a16.06 16.06 0 006.6 6.6l.7-.7a2 2 0 012.6-.45l2.6 1.6a2 2 0 01.95 1.7V19a2 2 0 01-2 2h-1C7.82 21 3 16.18 3 10V9a2 2 0 012-2z"
-                />
-              </svg>
-            </span>
-            <span className="text-white text-lg font-semibold">
-              +263 77 141 6796
-            </span>
-          </div>
-          <div className="flex gap-4">
-            <button className="bg-white text-orange-500 px-5 py-2 rounded-lg font-semibold shadow hover:bg-gray-100 transition">
-              Start Your Journey
-            </button>
-            <button className="bg-orange-700 text-white px-5 py-2 rounded-lg font-semibold shadow hover:bg-orange-800 transition">
+      {/* Get Started Today Section */}
+      <section className="py-12 bg-[#0e6399] mx-4 my-8">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-8 px-6">
+          {/* Left: Text and List */}
+          <div className="flex-1 text-white">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Get Started Today?
+            </h2>
+            <ul className="space-y-4 mb-6">
+              <li className="flex items-start gap-3">
+                <span className="inline-block w-4 h-4 bg-[#f77c1c] mr-2 mt-1"></span>
+                <div>
+                  <span className="font-bold">
+                    Couriers & Logistics Providers
+                  </span>{' '}
+                  – Optimize your delivery network.
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="inline-block w-4 h-4 bg-[#f77c1c] mr-2 mt-1"></span>
+                <div>
+                  <span className="font-bold">E-Commerce Brands</span> – Enhance
+                  customer satisfaction with hassle-free pickups.
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="inline-block w-4 h-4 bg-[#f77c1c] mr-2 mt-1"></span>
+                <div>
+                  <span className="font-bold">Property Managers</span> – Upgrade
+                  your building’s package handling system.
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="inline-block w-4 h-4 bg-[#f77c1c] mr-2 mt-1"></span>
+                <div>
+                  <span className="font-bold">Consumers</span> – Enjoy
+                  stress-free deliveries near you.
+                </div>
+              </li>
+            </ul>
+            <button className="bg-white text-[#f77c1c] font-bold px-6 py-2 rounded-lg shadow hover:bg-orange-100 transition">
               Contact Us
             </button>
           </div>
-        </div>
-        {/* Placeholder for image or illustration */}
-        <div className="flex-1 flex justify-center items-center">
-          <div className="w-56 h-56 bg-gray-200 rounded-xl shadow-lg hidden md:block" />
+          {/* Right: Image */}
+          <div className="flex-1 flex justify-center items-center">
+            <img
+              src="https://images.unsplash.com/photo-1515168833906-d2a3b82b1e1c?auto=format&fit=crop&w=400&q=80"
+              alt="Smart Lockers"
+              className="w-72 h-60 object-cover rounded-xl shadow-lg"
+            />
+          </div>
         </div>
       </section>
 
