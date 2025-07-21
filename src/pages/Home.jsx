@@ -269,20 +269,19 @@ const Home = () => {
               <h3 className="font-bold text-[#176ca7] text-lg mt-8 mb-3">
                 Courier & Delivery Services
               </h3>
-              <ul className="text-gray-700 text-base space-y-2">
+              <ul className="text-gray-700 text-xs space-y-2">
                 <li>
                   <span className="font-semibold">
                     Efficient Last-Mile Delivery
                   </span>{' '}
-                  – Drop multiple packages in one trip, reducing failed
-                  deliveries and operational costs.
+                  : Drop multiple packages in one trip.
                 </li>
                 <li>
-                  <span className="font-semibold">Secure & Tamper-Proof</span> –
+                  <span className="font-semibold">Secure & Tamper-Proof</span> :
                   Eliminate package theft with PIN/QR code access.
                 </li>
                 <li>
-                  <span className="font-semibold">Seamless Integration</span> –
+                  <span className="font-semibold">Seamless Integration</span> :
                   Compatible with major courier software for real-time tracking
                   and notifications.
                 </li>
@@ -296,24 +295,23 @@ const Home = () => {
               <h3 className="font-bold text-[#176ca7] text-lg mt-8 mb-3">
                 For E-Commerce Businesses
               </h3>
-              <ul className="text-gray-700 text-base space-y-2">
+              <ul className="text-gray-700 text-xs space-y-2">
                 <li>
                   <span className="font-semibold">Reduce Delivery Failure</span>{' '}
-                  – Customers pick up orders at their convenience, lowering
+                  : Customers pick up orders at their convenience, lowering
                   missed delivery rates.
                 </li>
                 <li>
                   <span className="font-semibold">
                     Contactless & Sustainable
                   </span>{' '}
-                  – Cut down on redelivery attempts and optimize routes for a
-                  greener operation.
+                  : Cut down on redelivery attempts .
                 </li>
                 <li>
                   <span className="font-semibold">
                     Branded Pickup Experience
                   </span>{' '}
-                  – Customizable locker with your logo for a professional touch.
+                  : Customizable locker with your logo for a professional touch.
                 </li>
               </ul>
             </div>
@@ -325,19 +323,19 @@ const Home = () => {
               <h3 className="font-bold text-[#176ca7] text-lg mt-8 mb-3">
                 For Property Managers & Offices
               </h3>
-              <ul className="text-gray-700 text-base space-y-2">
+              <ul className="text-gray-700 text-xs space-y-2">
                 <li>
                   <span className="font-semibold">
                     Automated Package Management
                   </span>{' '}
-                  – No more cluttered mailrooms or front desk bottlenecks.
+                  : No more cluttered mailrooms or front desk bottlenecks.
                 </li>
                 <li>
-                  <span className="font-semibold">Secure & Organized</span> –
+                  <span className="font-semibold">Secure & Organized</span> :
                   Residents retrieve parcels anytime with a unique access code.
                 </li>
                 <li>
-                  <span className="font-semibold">Scalable Solutions</span> –
+                  <span className="font-semibold">Scalable Solutions</span> :
                   Ideal for apartments, co-working spaces, and corporate
                   campuses.
                 </li>
@@ -351,21 +349,17 @@ const Home = () => {
               <h3 className="font-bold text-[#176ca7] text-lg mt-8 mb-3">
                 For End-Consumers
               </h3>
-              <ul className="text-gray-700 text-base space-y-2">
+              <ul className="text-gray-700 text-xs space-y-2">
+                <li>
+                  <span className="font-semibold">24/7 Access to Lockers</span>{' '}
+                  : Pick up your parcel any time — no need to adjust your
+                  routine or work hours.
+                </li>
                 <li>
                   <span className="font-semibold">
-                    Automated Package Management
+                    Affordable and Transparent Pricing
                   </span>{' '}
-                  – No more cluttered mailrooms or front desk bottlenecks.
-                </li>
-                <li>
-                  <span className="font-semibold">Secure & Organized</span> –
-                  Residents retrieve parcels anytime with a unique access code.
-                </li>
-                <li>
-                  <span className="font-semibold">Scalable Solutions</span> –
-                  Ideal for apartments, co-working spaces, and corporate
-                  campuses.
+                  : No hidden fees — competitive pricing for top-tier service.
                 </li>
               </ul>
             </div>
