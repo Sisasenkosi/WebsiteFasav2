@@ -125,6 +125,176 @@ const About = () => {
           </div>
         </div>
       </section>
+      {/* Meet Our Team Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 md:px-12 lg:px-20">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#176ca7] text-center mb-10">
+            Meet Our Team
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 mb-6">
+            {/* CEO */}
+            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Truswell Nyamakanga"
+                className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#f77c1c]"
+              />
+              <h3 className="text-base font-bold text-[#176ca7]">
+                Truswell Nyamakanga
+              </h3>
+              <p className="text-xs text-gray-600 mb-1">
+                Chief Executive Officer
+              </p>
+              <div className="flex space-x-2 mt-1">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#176ca7] text-xl"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#f77c1c] text-xl"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            {/* CTO */}
+            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/44.jpg"
+                alt="Farai Nechikwira"
+                className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#176ca7]"
+              />
+              <h3 className="text-base font-bold text-[#176ca7]">
+                Farai Nechikwira
+              </h3>
+              <p className="text-xs text-gray-600 mb-1">
+                Chief Technology Officer
+              </p>
+              <div className="flex space-x-2 mt-1">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#176ca7] text-xl"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#f77c1c] text-xl"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            {/* Lead Web Developer */}
+            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/65.jpg"
+                alt="Sisasenkosi Sibanda"
+                className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#f77c1c]"
+              />
+              <h3 className="text-base font-bold text-[#176ca7]">
+                Sisasenkosi Sibanda
+              </h3>
+              <p className="text-xs text-gray-600 mb-1">Lead Web Developer</p>
+              <div className="flex space-x-2 mt-1">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#176ca7] text-xl"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#f77c1c] text-xl"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            {/* Secretary */}
+            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Tanyaradzwa Murapa"
+                className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#176ca7]"
+              />
+              <h3 className="text-base font-bold text-[#176ca7]">
+                Tanyaradzwa Murapa
+              </h3>
+              <p className="text-xs text-gray-600 mb-1">Secretary</p>
+              <div className="flex space-x-2 mt-1">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#176ca7] text-xl"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#f77c1c] text-xl"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            {/* Cyber Security Officer */}
+            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/77.jpg"
+                alt="Brian Zhou"
+                className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#f77c1c]"
+              />
+              <h3 className="text-base font-bold text-[#176ca7]">Brian Zhou</h3>
+              <p className="text-xs text-gray-600 mb-1">
+                Cyber Security Officer
+              </p>
+              <div className="flex space-x-2 mt-1">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#176ca7] text-xl"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#f77c1c] text-xl"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            {/* Administrator */}
+            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/23.jpg"
+                alt="Tinotenda Samanyanga"
+                className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#176ca7]"
+              />
+              <h3 className="text-base font-bold text-[#176ca7]">
+                Tinotenda Samanyanga
+              </h3>
+              <p className="text-xs text-gray-600 mb-1">Administrator</p>
+              <div className="flex space-x-2 mt-1">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#176ca7] text-xl"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-[#f77c1c] text-xl"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
