@@ -1,6 +1,12 @@
 import React from 'react';
 import Header from '../components/Navbar';
 import Footer from '../components/Footer';
+import sisa from '../assets/team/sisa.jpeg';
+import farai from '../assets/team/Farai.jpeg';
+import brian from '../assets/team/Brian.jpeg';
+import tanya from '../assets/team/Tanya.jpeg';
+import tino from '../assets/team/Tino.jpeg';
+import trus from '../assets/team/trus.jpeg';
 
 const About = () => {
   return (
@@ -127,7 +133,7 @@ const About = () => {
         </div>
       </section>
       {/* Meet Our Team Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[z]">
         <div className="max-w-6xl mx-auto px-4 md:px-12 lg:px-20">
           <h2 className="text-2xl md:text-3xl font-bold text-[#176ca7] text-center mb-10">
             Meet Our Team
@@ -136,7 +142,7 @@ const About = () => {
             {/* CEO */}
             <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
               <img
-                src="https://randomuser.me/api/portraits/men/32.jpg"
+                src={trus}
                 alt="Truswell Nyamakanga"
                 className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#f77c1c]"
               />
@@ -164,7 +170,7 @@ const About = () => {
             {/* CTO */}
             <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
               <img
-                src="https://randomuser.me/api/portraits/men/44.jpg"
+                src={farai}
                 alt="Farai Nechikwira"
                 className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#176ca7]"
               />
@@ -192,7 +198,7 @@ const About = () => {
             {/* Lead Web Developer */}
             <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
               <img
-                src="https://randomuser.me/api/portraits/men/65.jpg"
+                src={sisa}
                 alt="Sisasenkosi Sibanda"
                 className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#f77c1c]"
               />
@@ -218,7 +224,7 @@ const About = () => {
             {/* Secretary */}
             <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
               <img
-                src="https://randomuser.me/api/portraits/women/68.jpg"
+                src={tanya}
                 alt="Tanyaradzwa Murapa"
                 className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#176ca7]"
               />
@@ -244,7 +250,7 @@ const About = () => {
             {/* Cyber Security Officer */}
             <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
               <img
-                src="https://randomuser.me/api/portraits/men/77.jpg"
+                src={brian}
                 alt="Brian Zhou"
                 className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#f77c1c]"
               />
@@ -270,7 +276,7 @@ const About = () => {
             {/* Administrator */}
             <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
               <img
-                src="https://randomuser.me/api/portraits/men/23.jpg"
+                src={tino}
                 alt="Tinotenda Samanyanga"
                 className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#176ca7]"
               />
