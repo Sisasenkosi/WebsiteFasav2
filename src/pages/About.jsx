@@ -1,12 +1,14 @@
 import React from 'react';
+
 import Header from '../components/Navbar';
-import Footer from '../components/Footer';
+import Footer2 from '../components/Footer2';
 import sisa from '../assets/team/sisa.jpeg';
 import farai from '../assets/team/Farai.jpeg';
 import brian from '../assets/team/Brian.jpeg';
 import tanya from '../assets/team/Tanya.jpeg';
 import tino from '../assets/team/Tino.jpeg';
 import trus from '../assets/team/trus.jpeg';
+import Milestones from '../components/Milestones';
 
 const About = () => {
   return (
@@ -172,7 +174,7 @@ const About = () => {
               <img
                 src={farai}
                 alt="Farai Nechikwira"
-                className="w-20 h-20 rounded-full object-cover mb-2 border-2 border-[#176ca7]"
+                className="w-20 h-20 rounded-full object-cover object-top mb-2 border-2 border-[#176ca7]"
               />
               <h3 className="text-base font-bold text-[#176ca7]">
                 Farai Nechikwira
@@ -303,150 +305,8 @@ const About = () => {
         </div>
       </section>
       {/* Our Milestones Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4 md:px-12 lg:px-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#176ca7] text-center mb-10">
-            Our Milestones
-          </h2>
-          <div className="relative flex flex-col items-center">
-            {/* Vertical timeline line */}
-            <div
-              className="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 z-0"
-              style={{ transform: 'translateX(-50%)' }}
-            />
-            <div className="flex flex-col gap-16 w-full">
-              {/* Milestone 1 */}
-              <div className="flex flex-col md:flex-row items-center w-full relative">
-                <div className="md:w-1/2 md:pr-8 flex justify-end">
-                  <div className="bg-white rounded-lg shadow p-4 w-full max-w-md text-right md:text-left">
-                    <div className="font-bold text-[#176ca7] text-lg">2020</div>
-                    <div className="font-semibold text-gray-700 text-sm mb-1">
-                      Company Founded
-                    </div>
-                    <div className="text-xs text-gray-500">
-                      Fasamartech is established with a vision to revolutionize
-                      package delivery.
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center md:w-0 md:mx-8 z-10">
-                  <div className="bg-[#f77c1c] text-white rounded-full w-12 h-12 flex items-center justify-center text-xl shadow-lg">
-                    <i className="fas fa-rocket"></i>
-                  </div>
-                </div>
-                <div className="md:w-1/2 md:pl-8 hidden md:flex"></div>
-              </div>
-              {/* Milestone 2 */}
-              <div className="flex flex-col md:flex-row items-center w-full relative">
-                <div className="md:w-1/2 md:pr-8 flex justify-end">
-                  <div className="bg-white rounded-lg shadow p-4 w-full max-w-md text-right md:text-left">
-                    <div className="font-bold text-[#176ca7] text-lg">2021</div>
-                    <div className="font-semibold text-gray-700 text-sm mb-1">
-                      First Smart Locker Deployed
-                    </div>
-                    <div className="text-xs text-gray-500">
-                      Our first smart locker is installed, marking a major step
-                      in innovation.
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center md:w-0 md:mx-8 z-10">
-                  <div className="bg-[#176ca7] text-white rounded-full w-12 h-12 flex items-center justify-center text-xl shadow-lg">
-                    <i className="fas fa-box-open"></i>
-                  </div>
-                </div>
-                <div className="md:w-1/2 md:pl-8 flex justify-start">
-                  <div className="bg-white rounded-lg shadow p-4 w-full max-w-md text-left">
-                    <div className="font-bold text-[#176ca7] text-lg">2021</div>
-                    <div className="font-semibold text-gray-700 text-sm mb-1">
-                      First Smart Locker Deployed
-                    </div>
-                    <div className="text-xs text-gray-500">
-                      Our first smart locker is installed, marking a major step
-                      in innovation.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Milestone 3 */}
-              <div className="flex flex-col md:flex-row items-center w-full relative">
-                <div className="md:w-1/2 md:pr-8 flex justify-end">
-                  <div className="bg-white rounded-lg shadow p-4 w-full max-w-md text-right md:text-left">
-                    <div className="font-bold text-[#176ca7] text-lg">2022</div>
-                    <div className="font-semibold text-gray-700 text-sm mb-1">
-                      1000+ Deliveries Completed
-                    </div>
-                    <div className="text-xs text-gray-500">
-                      We celebrate over 1000 successful deliveries through our
-                      smart lockers.
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center md:w-0 md:mx-8 z-10">
-                  <div className="bg-[#f77c1c] text-white rounded-full w-12 h-12 flex items-center justify-center text-xl shadow-lg">
-                    <i className="fas fa-shipping-fast"></i>
-                  </div>
-                </div>
-                <div className="md:w-1/2 md:pl-8 hidden md:flex"></div>
-              </div>
-              {/* Milestone 4 */}
-              <div className="flex flex-col md:flex-row items-center w-full relative">
-                <div className="md:w-1/2 md:pr-8 flex justify-end">
-                  <div className="bg-white rounded-lg shadow p-4 w-full max-w-md text-right md:text-left">
-                    <div className="font-bold text-[#176ca7] text-lg">2023</div>
-                    <div className="font-semibold text-gray-700 text-sm mb-1">
-                      Expanded to 3 Cities
-                    </div>
-                    <div className="text-xs text-gray-500">
-                      Our network grows, bringing smart lockers to three major
-                      cities.
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center md:w-0 md:mx-8 z-10">
-                  <div className="bg-[#176ca7] text-white rounded-full w-12 h-12 flex items-center justify-center text-xl shadow-lg">
-                    <i className="fas fa-city"></i>
-                  </div>
-                </div>
-                <div className="md:w-1/2 md:pl-8 flex justify-start">
-                  <div className="bg-white rounded-lg shadow p-4 w-full max-w-md text-left">
-                    <div className="font-bold text-[#176ca7] text-lg">2023</div>
-                    <div className="font-semibold text-gray-700 text-sm mb-1">
-                      Expanded to 3 Cities
-                    </div>
-                    <div className="text-xs text-gray-500">
-                      Our network grows, bringing smart lockers to three major
-                      cities.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Milestone 5 */}
-              <div className="flex flex-col md:flex-row items-center w-full relative">
-                <div className="md:w-1/2 md:pr-8 flex justify-end">
-                  <div className="bg-white rounded-lg shadow p-4 w-full max-w-md text-right md:text-left">
-                    <div className="font-bold text-[#176ca7] text-lg">2024</div>
-                    <div className="font-semibold text-gray-700 text-sm mb-1">
-                      Launched Mobile App
-                    </div>
-                    <div className="text-xs text-gray-500">
-                      We launch our mobile app, making smart locker access even
-                      easier.
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center md:w-0 md:mx-8 z-10">
-                  <div className="bg-[#f77c1c] text-white rounded-full w-12 h-12 flex items-center justify-center text-xl shadow-lg">
-                    <i className="fas fa-mobile-alt"></i>
-                  </div>
-                </div>
-                <div className="md:w-1/2 md:pl-8 hidden md:flex"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <Footer />
+      <Milestones />
+      <Footer2 />
     </div>
   );
 };

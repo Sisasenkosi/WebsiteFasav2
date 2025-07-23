@@ -3,6 +3,7 @@ import React from 'react';
 const playStoreBadge =
   'https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg';
 import image1 from '../assets/img1.jpeg';
+import logo from '../assets/logofasa.png';
 
 const Footer = () => (
   <>
@@ -64,11 +65,7 @@ const Footer = () => (
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
         {/* Company Info */}
         <div className="md:col-span-2 flex flex-col space-y-3">
-          <div className="flex items-center space-x-2 mb-2">
-            <span className="text-2xl font-bold text-gray-800">
-              Fasamartech
-            </span>
-          </div>
+          <img className="h-18 w-3/7 mr-2" src={logo} alt="Fasamartech Logo" />
           <p className="text-gray-600 text-sm">
             Don't wait—get in touch now to schedule an appointment or request a
             free quote.

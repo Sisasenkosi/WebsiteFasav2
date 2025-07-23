@@ -16,3 +16,4 @@ If you are developing a production application, we recommend using TypeScript wi
 1. React Router Dom
 2. Font awesome
    npm install @fortawesome/fontawesome-free
+3. Framer motion
