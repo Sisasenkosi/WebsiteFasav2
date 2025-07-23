@@ -373,7 +373,7 @@ bg-[#0e6399]
       </section>
 
       {/* Get Started Today Section */}
-      <section className="py-12 bg-[#0e6399] mx-4 my-8">
+      <section className="py-12 bg-[#0e6399]  my-8">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-8 px-6">
           {/* Left: Text and List */}
           <div className="flex-1 text-white">

@@ -7,12 +7,12 @@ const ContactUs = () => {
     <div className="bg-white min-h-screen w-full">
       <Header />
       {/* Orange Section with Badge and Heading Side by Side on md+ */}
-      <section className="bg-orange-500 flex flex-col md:flex-row items-center justify-center py-12 w-full md:space-x-6">
-        <span className="bg-white/30 text-white font-semibold px-4 py-2 rounded ml-4 mb-4 md:mb-0 tracking-widest text-xs md:text-sm ">
+      <section className="bg-orange-500 flex-row items-center justify-center py-2  w-full">
+        <span className="bg-white/30 text-white font-semibold px-4 py-2 rounded mb-4 tracking-widest text-xs md:text-sm">
           SEAMLESS. SECURE. SMART.
         </span>
-        <h1 className="text-3xl md:text-5xl font-bold text-white text-center md:text-left">
-          CONTACT US
+        <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
+          Contact Us
         </h1>
       </section>
       {/* Contact Form Section */}

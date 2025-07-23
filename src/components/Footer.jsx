@@ -178,7 +178,7 @@ const Footer = () => (
         </div>
         {/* Working Hours */}
         <div className="flex justify-center md:justify-start">
-          <div className="bg-white rounded-l shadow-lg px-2 py-2 mt-4 w-[700px]">
+          <div className="bg-white rounded-l shadow-lg px-2 py-2 mt-4 h-1/2 w-[700px]">
             <h4 className="font-semibold text-gray-800 mb-3">Working Hours</h4>
             <ul className="divide-y divide-gray-200 text-gray-600 text-sm">
               <li className="py-2 flex justify-between">
