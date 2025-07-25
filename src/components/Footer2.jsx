@@ -1,6 +1,7 @@
 import React from 'react';
 import image1 from '../assets/img1.jpeg';
 import logo from '../assets/logofasa.png';
+import { Link } from 'react-router-dom';
 
 const Footer2 = () => (
   <>
@@ -87,56 +88,51 @@ const Footer2 = () => (
             <span>✉️</span>
             <span>fasamartech@gmail.com</span>
           </div>
-          <div className="flex space-x-3 mt-3">
+          <div className="flex space-x-3 mt-2">
             <a
-              href="#"
-              className="bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition"
+              href="https://www.facebook.com/share/1JXeGw2oqx/"
+              className="text-gray-400 hover:text-orange-500"
             >
               <i className="fab fa-facebook-f"></i>
             </a>
             <a
-              href="#"
-              className="bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a
-              href="#"
-              className="bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition"
+              href="www.linkedin.com/in/fasa-smartech"
+              className="text-gray-400 hover:text-orange-500"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
             <a
-              href="#"
-              className="bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition"
+              href="https://www.instagram.com/fasasmartech/"
+              className="text-gray-400 hover:text-orange-500"
             >
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@fasasmartech"
+              className="text-gray-400 hover:text-orange-500"
+            >
+              <i className="fab fa-tiktok"></i>
             </a>
           </div>
         </div>
         {/* Top Links */}
         <div>
           <h4 className="font-semibold text-orange-500 mb-3">Top Links</h4>
-          <ul className="space-y-2 text-gray-300 text-sm">
+          <ul className="space-y-2 text-gray-600 text-sm">
             <li>
-              <a href="#" className="hover:text-orange-500 transition">
+              <Link to="/aboutus" className="hover:text-orange-500">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-orange-500 transition">
-                Our Service
-              </a>
+              <Link to="/services" className="hover:text-orange-500">
+                Our Services
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-orange-500 transition">
-                FAQ Question
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-500 transition">
+              <Link to="/contactus" className="hover:text-orange-500">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

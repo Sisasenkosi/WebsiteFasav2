@@ -163,7 +163,7 @@ bg-[#0e6399]
             </div>
           </div>
           {/* Right: Text */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center">
+          <div className="w-full mt-12 md:w-1/2 flex flex-col justify-center">
             <h2 className="text-2xl md:text-3xl text-black font-bold mb-4">
               Welcome to the World of Endless Possibilities
             </h2>

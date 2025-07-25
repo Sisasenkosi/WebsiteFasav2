@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const playStoreBadge =
   'https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg';
@@ -84,6 +85,7 @@ const Footer = () => (
             <span>✉️</span>
             <span>fasasmartechnology@gmail.com</span>
           </div>
+          {/*social media links*/}
           <div className="flex space-x-3 mt-2">
             <a
               href="https://www.facebook.com/share/1JXeGw2oqx/"
@@ -133,20 +135,19 @@ const Footer = () => (
           <h4 className="font-semibold text-gray-800 mb-3">Top Links</h4>
           <ul className="space-y-2 text-gray-600 text-sm">
             <li>
-              <a href="#" className="hover:text-orange-500">
+              <Link to="/aboutus" className="hover:text-orange-500">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-orange-500">
+              <Link to="/services" className="hover:text-orange-500">
                 Our Services
-              </a>
+              </Link>
             </li>
-
             <li>
-              <a href="#" className="hover:text-orange-500">
+              <Link to="/contactus" className="hover:text-orange-500">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
           {/* Newsletter and Copyright */}
@@ -174,6 +175,7 @@ const Footer = () => (
             </div>
           </div>
         </div>
+
         {/* Our Services */}
         <div>
           <h4 className="font-semibold text-gray-800 mb-3">Our Services</h4>
