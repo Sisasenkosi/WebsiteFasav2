@@ -1,13 +1,16 @@
 import React from 'react';
 import Header from '../components/Navbar';
 import Footer from '../components/Footer';
+import happy from '../assets/happyWoman.jpeg';
+import qrscan from '../assets/qrscan.jpeg';
 
 const Home = () => {
   return (
     <div className="bg-white min-h-screen w-full">
       <Header />
+
       {/* Hero Section */}
-      <section className="relative bg-gray-900 text-white pt-16 pb-32 px-6 lg:px-8">
+      <section className="relative bg-black text-white pt-16 pb-32 px-6 lg:px-8">
         <div className="absolute inset-0 bg-black/60 z-0" />
         <div className="relative z-10 max-w-7xl mx-auto">
           {/* Top Part: Headline and Subtext */}
@@ -153,9 +156,9 @@ bg-[#0e6399]
           <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1515168833906-d2a3b82b1e1c?auto=format&fit=crop&w=400&q=80"
+                src={qrscan}
                 alt="Smart Locker"
-                className="rounded-xl w-72 h-56 object-cover shadow-lg"
+                className="rounded-xl w-72 h-80 object-cover shadow-lg"
               />
             </div>
           </div>
@@ -419,9 +422,9 @@ bg-[#0e6399]
           {/* Right: Image */}
           <div className="flex-1 flex justify-center items-center">
             <img
-              src="https://images.unsplash.com/photo-1515168833906-d2a3b82b1e1c?auto=format&fit=crop&w=400&q=80"
+              src={happy}
               alt="Smart Lockers"
-              className="w-72 h-60 object-cover rounded-xl shadow-lg"
+              className="w-72 h-80 object-cover rounded-xl shadow-lg"
             />
           </div>
         </div>

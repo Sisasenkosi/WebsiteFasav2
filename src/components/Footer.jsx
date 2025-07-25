@@ -85,17 +85,29 @@ const Footer = () => (
             <span>fasasmartechnology@gmail.com</span>
           </div>
           <div className="flex space-x-3 mt-2">
-            <a href="#" className="text-gray-400 hover:text-orange-500">
+            <a
+              href="https://www.facebook.com/share/1JXeGw2oqx/"
+              className="text-gray-400 hover:text-orange-500"
+            >
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="#" className="text-gray-400 hover:text-orange-500">
+            <a
+              href="www.linkedin.com/in/fasa-smartech"
+              className="text-gray-400 hover:text-orange-500"
+            >
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="#" className="text-gray-400 hover:text-orange-500">
+            <a
+              href="https://www.instagram.com/fasasmartech/"
+              className="text-gray-400 hover:text-orange-500"
+            >
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="#" className="text-gray-400 hover:text-orange-500">
-              <i className="fab fa-youtube"></i>
+            <a
+              href="https://www.tiktok.com/@fasasmartech"
+              className="text-gray-400 hover:text-orange-500"
+            >
+              <i className="fab fa-tiktok"></i>
             </a>
           </div>
           {/* Google Play Store Button */}
@@ -130,11 +142,7 @@ const Footer = () => (
                 Our Services
               </a>
             </li>
-            <li>
-              <a href="#" className="hover:text-orange-500">
-                FAQ'S
-              </a>
-            </li>
+
             <li>
               <a href="#" className="hover:text-orange-500">
                 Contact Us

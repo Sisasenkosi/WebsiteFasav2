@@ -20,7 +20,7 @@ const About = () => {
           SEAMLESS. SECURE. SMART.
         </span>
         <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
-          About Us
+          AboutUs
         </h1>
       </section>
 
@@ -36,88 +36,36 @@ const About = () => {
               eliminate delivery friction, save time, and maximize
               convenience—for everyone involved in the logistics chain.
             </p>
-            <ul className="space-y-2">
-              <li className="flex items-center text-gray-700 text-sm">
-                <span className="inline-block w-5 h-5 bg-[#f77c1c] rounded-full mr-2 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-3 h-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke="#fff"
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </span>
-                Experienced, Reliable, and Ready to Serve
-              </li>
-              <li className="flex items-center text-gray-700 text-sm">
-                <span className="inline-block w-5 h-5 bg-[#f77c1c] rounded-full mr-2 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-3 h-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke="#fff"
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </span>
-                Your dependable Partner for the Long Haul
-              </li>
-              <li className="flex items-center text-gray-700 text-sm">
-                <span className="inline-block w-5 h-5 bg-[#f77c1c] rounded-full mr-2 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-3 h-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke="#fff"
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </span>
-                Our Commitment to Quality
-              </li>
-              <li className="flex items-center text-gray-700 text-sm">
-                <span className="inline-block w-5 h-5 bg-[#f77c1c] rounded-full mr-2 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-3 h-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke="#fff"
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </span>
-                Serving You with Integrity
-              </li>
+            {/* ...existing code... */}
+            <ul className="mb-4 text-gray-700 text-sm space-y-3">
+              {[
+                'Experienced, Reliable, and Ready to Serve',
+                'Your dependable Partner for the Long Haul',
+                'Our Commitment to Quality',
+                'Serving You with Integrity',
+              ].map((text, idx) => (
+                <li key={idx} className="flex items-center">
+                  <span className="flex items-center justify-center w-4 h-4 rounded-full bg-orange-500 mr-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={3}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  <span>{text}</span>
+                </li>
+              ))}
             </ul>
+            {/* ...existing code... */}
           </div>
           {/* Right: Images (no card, border, or shadow) */}
           <div className="flex-1 flex flex-col gap-4 items-center justify-center">
