@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Navbar';
 import Footer from '../components/Footer';
 import happy from '../assets/happyWoman.jpeg';
@@ -41,13 +42,12 @@ const Home = () => {
                 redelivery. Save time, reduce costs, and improve delivery
                 success rates.
               </p>
-              <button
-                className="
-bg-[#0e6399]
- text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition"
+              <Link
+                to="/contactus"
+                className="bg-[#0e6399] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition inline-block"
               >
                 Contact Us &gt;
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -251,13 +251,12 @@ bg-[#0e6399]
                 Serving You with Integrity
               </li>
             </ul>
-            <button
-              className="
-bg-[#0e6399]
- text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition w-max"
+            <Link
+              to="/aboutus"
+              className="bg-[#0e6399] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800  w-1/3 transition inline-block"
             >
-              Find out more
-            </button>
+              Find out more &gt;
+            </Link>
           </div>
         </div>
       </section>

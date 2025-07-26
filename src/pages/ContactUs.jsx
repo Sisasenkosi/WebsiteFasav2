@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const ContactUs = () => {
+  const formRef = useRef(null);
+  const navigate = useNavigate();
+
+  // Handle form submission
+  const handleSubmit = () => {
+    // Let the form submit to getform.io
+    setTimeout(() => {
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+      alert('Successfully submitted!');
+      navigate('/contactus');
+    }, 100); // Delay to allow getform.io to process
+  };
+
   return (
     <div className="bg-white min-h-screen w-full">
       <Header />
@@ -15,9 +31,15 @@ const ContactUs = () => {
           Contact Us
         </h1>
       </section>
-      {/* Contact Form Section */}
+      {/* Contact Form */}
       <section className="flex justify-center items-center py-12 bg-white">
-        <form className="w-full max-w-3xl bg-white rounded-xl shadow-2xl p-8 md:p-12">
+        <form
+          ref={formRef}
+          className="w-full max-w-3xl bg-white rounded-xl shadow-2xl p-8 md:p-12"
+          action="https://getform.io/f/adrgvexa"
+          method="POST"
+          onSubmit={handleSubmit}
+        >
           <h2 className="text-2xl font-bold text-blue-900 mb-6">
             Contact Form
           </h2>
@@ -28,6 +50,7 @@ const ContactUs = () => {
               </label>
               <input
                 type="text"
+                name="firstName"
                 className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder="First Name"
                 required
@@ -39,6 +62,7 @@ const ContactUs = () => {
               </label>
               <input
                 type="text"
+                name="lastName"
                 className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder="Last Name"
                 required
@@ -50,6 +74,7 @@ const ContactUs = () => {
               </label>
               <input
                 type="tel"
+                name="phone"
                 className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder="Phone Number"
                 required
@@ -61,6 +86,7 @@ const ContactUs = () => {
               </label>
               <input
                 type="email"
+                name="email"
                 className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder="Email"
                 required
@@ -72,6 +98,7 @@ const ContactUs = () => {
               Message*
             </label>
             <textarea
+              name="message"
               className="w-full border border-gray-300 rounded px-4 py-2 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder="Your message..."
               required
@@ -87,7 +114,6 @@ const ContactUs = () => {
           </div>
         </form>
       </section>
-
       <Footer />
     </div>
   );

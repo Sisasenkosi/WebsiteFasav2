@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/logofasa.png';
 
 const Header = () => {
@@ -20,7 +21,7 @@ const Header = () => {
         </div>
       </div>
       {/* Main Navbar */}
-      <nav className="sticky bg-white rounded-lg shadow mx-2 md:mx-6 mt-2 flex items-center justify-between px-4 md:px-6 py-3 relative">
+      <nav className="sticky bg-white rounded-lg shadow mx-2 md:mx-6  flex items-center justify-between px-4 md:px-6 py-3 relative">
         {/* Logo */}
         <div className="flex items-center ">
           <img className="h-12 w-auto mr-2" src={logo} alt="Fasamartech Logo" />
@@ -28,24 +29,52 @@ const Header = () => {
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
           <li>
-            <Link to="/" className="hover:text-orange-500">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-orange-500 font-semibold px-4 py-2'
+                  : 'text-gray-800 hover:text-orange-500 px-4 py-2'
+              }
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/aboutus" className="hover:text-orange-500">
+            <NavLink
+              to="/aboutus"
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-orange-500 font-semibold px-4 py-2'
+                  : 'text-gray-800 hover:text-orange-500 px-4 py-2'
+              }
+            >
               About Us
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/services" className="hover:text-orange-500">
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-orange-500 font-semibold px-4 py-2'
+                  : 'text-gray-800 hover:text-orange-500 px-4 py-2'
+              }
+            >
               Services
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contactus" className="hover:text-orange-500">
-              Contact
-            </Link>
+            <NavLink
+              to="/contactus"
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-orange-500 font-semibold px-4 py-2'
+                  : 'text-gray-800 hover:text-orange-500 px-4 py-2'
+              }
+            >
+              Contact Us
+            </NavLink>
           </li>
         </ul>
         {/* Desktop Contact Us Button */}

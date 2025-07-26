@@ -42,9 +42,12 @@ const Footer2 = () => (
             <button className="bg-white text-orange-500 px-5 py-2 rounded-lg font-semibold shadow hover:bg-gray-100 transition">
               Start Your Journey
             </button>
-            <button className="bg-orange-700 text-white px-5 py-2 rounded-lg font-semibold shadow hover:bg-orange-800 transition">
+            <Link
+              to="/contactus"
+              className="bg-orange-700 text-white px-5 py-2 rounded-lg font-semibold shadow hover:bg-orange-800 transition"
+            >
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
         {/* Right: Image */}
@@ -156,7 +159,7 @@ const Footer2 = () => (
             </li>
             <li className="flex justify-between">
               <span>Saturday</span>
-              <span>2:00 PM - 8:00 PM</span>
+              <span>8:00 AM - 2:00 PM</span>
             </li>
             <li className="flex justify-between">
               <span>Sunday</span>
