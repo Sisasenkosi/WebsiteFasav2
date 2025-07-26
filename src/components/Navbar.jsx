@@ -7,19 +7,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-orange-500">
-      {/* Top Bar */}
-      <div className="flex flex-col gap-1 md:flex-row md:justify-between md:items-center text-white text-xs px-4 md:px-8 py-2">
-        <div>
-          <span className="mr-4">
-            🏢 4rth floor, ZIMPOST HQ Julius Nyerere & Silundika, Harare
-          </span>
-          <span>📧 fasasmartechnology@gmail.com</span>
-        </div>
-        <div className="flex items-center space-x-3">
-          <span>📞 +263 771416796</span>
-        </div>
-      </div>
+    <header className="bg-orange-500 ">
       {/* Main Navbar */}
       <nav className="sticky bg-white rounded-lg shadow mx-2 md:mx-6  flex items-center justify-between px-4 md:px-6 py-3 relative">
         {/* Logo */}
