@@ -42,7 +42,7 @@ const Home = () => {
               variants={fadeInUp}
               transition={{ duration: 0.8, delay: 0.1 }}
             >
-              <span className="bg-white/20 text-orange-300 font-semibold px-4 py-2 rounded mb-4 tracking-widest text-xs md:text-sm inline-block">
+              <span className="bg-white/20 text-orange-300 font-semibold px-4 py-2 rounded mb-4 mt-8 tracking-widest text-xs md:text-sm inline-block">
                 SEAMLESS. SECURE. SMART.
               </span>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-2">
@@ -61,7 +61,7 @@ const Home = () => {
               variants={fadeInUp}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <div className="max-w-md text-left mr-0 lg:mr-4">
+              <div className="max-w-md text-left mt-10 mr-0 lg:mr-4">
                 <p className="text-sm text-gray-200 mb-4">
                   Streamline your last-mile operations. Deliver multiple
                   packages at a single smart locker hub and eliminate the need

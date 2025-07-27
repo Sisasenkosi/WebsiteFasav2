@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { motion } from 'framer-motion';
 import Header from '../components/Navbar';
 import Footer2 from '../components/Footer2';
 import sisa from '../assets/team/sisa.jpeg';
@@ -10,25 +10,56 @@ import tino from '../assets/team/Tino.jpeg';
 import trus from '../assets/team/trus.jpeg';
 import Milestones from '../components/Milestones';
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const cardHover = {
+  hover: {
+    scale: 1.06,
+    boxShadow: '0 8px 32px 0 rgba(247,124,28,0.15)',
+    transition: { duration: 0.3 },
+  },
+};
+
 const About = () => {
   return (
     <div className="bg-white min-h-screen w-full">
       <Header />
       {/* Orange About Us Banner */}
-      <section className="bg-orange-500 flex-row items-center justify-center py-2  w-full">
+      <motion.section
+        className="bg-orange-500 flex-row items-center justify-center py-2 w-full"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+      >
         <span className="bg-white/30 text-white font-semibold px-4 py-2 rounded mb-4 tracking-widest text-xs md:text-sm">
           SEAMLESS. SECURE. SMART.
         </span>
         <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
           AboutUs
         </h1>
-      </section>
+      </motion.section>
 
       {/* About Us Card Section */}
-      <section className="flex justify-center items-center py-12 bg-white">
+      <motion.section
+        className="flex justify-center items-center py-12 bg-white"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        transition={{ duration: 0.7, delay: 0.1 }}
+      >
         <div className="w-full max-w-4xl flex flex-col md:flex-row gap-8">
           {/* Left: Text Card */}
-          <div className="flex-1 bg-white rounded-xl shadow-xl border border-gray-100 p-8 md:p-12 flex flex-col justify-center">
+          <motion.div
+            className="flex-1 bg-white rounded-xl shadow-xl border border-gray-100 p-8 md:p-12 flex flex-col justify-center"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
             <h2 className="text-[#176ca7] text-xl font-bold mb-2">About Us</h2>
             <p className="text-gray-800 mb-4">
               At FasaSmartech, we're transforming the way packages are delivered
@@ -36,7 +67,6 @@ const About = () => {
               eliminate delivery friction, save time, and maximize
               convenience—for everyone involved in the logistics chain.
             </p>
-            {/* ...existing code... */}
             <ul className="mb-4 text-gray-700 text-sm space-y-3">
               {[
                 'Experienced, Reliable, and Ready to Serve',
@@ -65,32 +95,45 @@ const About = () => {
                 </li>
               ))}
             </ul>
-            {/* ...existing code... */}
-          </div>
+          </motion.div>
           {/* Right: Images (no card, border, or shadow) */}
-          <div className="flex-1 flex flex-col gap-4 items-center justify-center">
-            <img
+          <motion.div
+            className="flex-1 flex flex-col gap-4 items-center justify-center"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+          >
+            <motion.img
               src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80"
               alt="Locker"
               className="rounded-lg w-64 h-48 object-cover"
+              whileHover={{ scale: 1.04 }}
+              transition={{ duration: 0.3 }}
             />
-            <img
+            <motion.img
               src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80"
               alt="Access"
               className="rounded-lg w-64 h-48 object-cover"
+              whileHover={{ scale: 1.04 }}
+              transition={{ duration: 0.3 }}
             />
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
       {/* Meet Our Team Section */}
-      <section className="py-16 bg-[z]">
-        <div className="max-w-6xl mx-auto px-4 md:px-12 lg:px-20">
+      <section className="py-16 bg-[#f7f1e9]">
+        <div className="max-w-6xl mx-auto px-4  mb-8 md:px-12 lg:px-20">
           <h2 className="text-2xl md:text-3xl font-bold text-[#176ca7] text-center mb-10">
             Meet Our Team
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4 mb-6">
             {/* CEO */}
-            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+            <motion.div
+              className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center"
+              whileHover="hover"
+              variants={cardHover}
+            >
               <img
                 src={trus}
                 alt="Truswell Nyamakanga"
@@ -116,9 +159,13 @@ const About = () => {
                   <i className="fab fa-instagram"></i>
                 </a>
               </div>
-            </div>
+            </motion.div>
             {/* CTO */}
-            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+            <motion.div
+              className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center"
+              whileHover="hover"
+              variants={cardHover}
+            >
               <img
                 src={farai}
                 alt="Farai Nechikwira"
@@ -144,9 +191,13 @@ const About = () => {
                   <i className="fab fa-instagram"></i>
                 </a>
               </div>
-            </div>
+            </motion.div>
             {/* Lead Web Developer */}
-            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+            <motion.div
+              className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center"
+              whileHover="hover"
+              variants={cardHover}
+            >
               <img
                 src={sisa}
                 alt="Sisasenkosi Sibanda"
@@ -170,9 +221,13 @@ const About = () => {
                   <i className="fab fa-instagram"></i>
                 </a>
               </div>
-            </div>
+            </motion.div>
             {/* Secretary */}
-            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+            <motion.div
+              className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center"
+              whileHover="hover"
+              variants={cardHover}
+            >
               <img
                 src={tanya}
                 alt="Tanyaradzwa Murapa"
@@ -196,9 +251,13 @@ const About = () => {
                   <i className="fab fa-instagram"></i>
                 </a>
               </div>
-            </div>
+            </motion.div>
             {/* Cyber Security Officer */}
-            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+            <motion.div
+              className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center"
+              whileHover="hover"
+              variants={cardHover}
+            >
               <img
                 src={brian}
                 alt="Brian Zhou"
@@ -222,9 +281,13 @@ const About = () => {
                   <i className="fab fa-instagram"></i>
                 </a>
               </div>
-            </div>
+            </motion.div>
             {/* Administrator */}
-            <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
+            <motion.div
+              className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center"
+              whileHover="hover"
+              variants={cardHover}
+            >
               <img
                 src={tino}
                 alt="Tinotenda Samanyanga"
@@ -248,7 +311,7 @@ const About = () => {
                   <i className="fab fa-instagram"></i>
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
