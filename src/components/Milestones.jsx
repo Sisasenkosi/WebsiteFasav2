@@ -145,12 +145,11 @@ const Milestones = () => {
                       <span className="text-xs text-gray-400">SEP 2024</span>
                     </div>
                     <div className="font-bold text-[#176ca7] text-lg mb-1">
-                      Customer Success Champion
+                      Piloting
                     </div>
                     <div className="text-xs text-gray-500">
-                      Recognized for exceptional customer satisfaction rates and
-                      innovative customer-centric approach to product
-                      development.
+                      Product roled out for testing with select customers,
+                      gathering valuable feedback for improvements.
                     </div>
                   </div>
                 </div>

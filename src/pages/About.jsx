@@ -102,15 +102,8 @@ const About = () => {
           >
             <motion.img
               src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80"
-              alt="Locker"
-              className="rounded-lg w-64 h-48 object-cover"
-              whileHover={{ scale: 1.04 }}
-              transition={{ duration: 0.3 }}
-            />
-            <motion.img
-              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80"
               alt="Access"
-              className="rounded-lg w-64 h-48 object-cover"
+              className="rounded-lg w-80 h-66 object-cover"
               whileHover={{ scale: 1.04 }}
               transition={{ duration: 0.3 }}
             />
