@@ -28,19 +28,15 @@ const About = () => {
     <div className="bg-white min-h-screen w-full">
       <Header />
       {/* Orange About Us Banner */}
-      <motion.section
-        className="bg-orange-500 flex-row items-center justify-center py-2 w-full"
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-      >
+
+      <section className="bg-orange-500 flex-row items-center justify-center py-2  w-full">
         <span className="bg-white/30 text-white font-semibold px-4 py-2 rounded mb-4 tracking-widest text-xs md:text-sm">
           SEAMLESS. SECURE. SMART.
         </span>
         <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
-          AboutUs
+          About Us
         </h1>
-      </motion.section>
+      </section>
 
       {/* About Us Card Section */}
       <motion.section
@@ -147,7 +143,7 @@ const About = () => {
               </p>
               <div className="flex space-x-2 mt-1">
                 <a
-                  href="#"
+                  href="www.linkedin.com/in/fasa-smartech"
                   className="text-gray-400 hover:text-[#176ca7] text-xl"
                 >
                   <i className="fab fa-linkedin"></i>
@@ -179,7 +175,7 @@ const About = () => {
               </p>
               <div className="flex space-x-2 mt-1">
                 <a
-                  href="#"
+                  href="www.linkedin.com/in/fasa-smartech"
                   className="text-gray-400 hover:text-[#176ca7] text-xl"
                 >
                   <i className="fab fa-linkedin"></i>
@@ -209,7 +205,7 @@ const About = () => {
               <p className="text-xs text-gray-600 mb-1">Lead Web Developer</p>
               <div className="flex space-x-2 mt-1">
                 <a
-                  href="#"
+                  href="http://linkedin.com/in/sisasenkosi-sibanda-313704239"
                   className="text-gray-400 hover:text-[#176ca7] text-xl"
                 >
                   <i className="fab fa-linkedin"></i>
@@ -239,7 +235,7 @@ const About = () => {
               <p className="text-xs text-gray-600 mb-1">Secretary</p>
               <div className="flex space-x-2 mt-1">
                 <a
-                  href="#"
+                  href="www.linkedin.com/in/fasa-smartech"
                   className="text-gray-400 hover:text-[#176ca7] text-xl"
                 >
                   <i className="fab fa-linkedin"></i>
@@ -269,7 +265,7 @@ const About = () => {
               </p>
               <div className="flex space-x-2 mt-1">
                 <a
-                  href="#"
+                  href="www.linkedin.com/in/fasa-smartech"
                   className="text-gray-400 hover:text-[#176ca7] text-xl"
                 >
                   <i className="fab fa-linkedin"></i>
@@ -299,7 +295,7 @@ const About = () => {
               <p className="text-xs text-gray-600 mb-1">Administrator</p>
               <div className="flex space-x-2 mt-1">
                 <a
-                  href="#"
+                  href="www.linkedin.com/in/fasa-smartech"
                   className="text-gray-400 hover:text-[#176ca7] text-xl"
                 >
                   <i className="fab fa-linkedin"></i>

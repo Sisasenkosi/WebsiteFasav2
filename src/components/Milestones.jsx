@@ -40,14 +40,14 @@ const Milestones = () => {
                       <span className="text-xs font-bold bg-blue-100 text-blue-700 px-2 py-1 rounded">
                         EXCELLENCE
                       </span>
-                      <span className="text-xs text-gray-400">DEC 2024</span>
+                      <span className="text-xs text-gray-400">SEP 2024</span>
                     </div>
                     <div className="font-bold text-[#176ca7] text-lg mb-1">
                       Innovation Excellence Award
                     </div>
                     <div className="text-xs text-gray-500">
                       Recognized for outstanding technological innovation and
-                      breakthrough solutions in AI-powered automation systems.
+                      breakthrough solutions in parcel delivery.
                     </div>
                   </div>
                 </div>
@@ -81,11 +81,11 @@ const Milestones = () => {
                       <span className="text-xs text-gray-400">NOV 2024</span>
                     </div>
                     <div className="font-bold text-[#176ca7] text-lg mb-1">
-                      Digital Transformation Leader
+                      Requirements Analysis
                     </div>
                     <div className="text-xs text-gray-500">
-                      Awarded for leading successful digital transformation
-                      initiatives across multiple industry verticals.
+                      Successfully gathered and analyzed customer requirements,
+                      setting the foundation for our product development.
                     </div>
                   </div>
                 </div>
@@ -104,15 +104,14 @@ const Milestones = () => {
                       <span className="text-xs font-bold bg-blue-100 text-blue-700 px-2 py-1 rounded">
                         TECHNOLOGY
                       </span>
-                      <span className="text-xs text-gray-400">OCT 2024</span>
+                      <span className="text-xs text-gray-400">Jan 2025</span>
                     </div>
                     <div className="font-bold text-[#176ca7] text-lg mb-1">
-                      Best Technology Solution
+                      MVP Building
                     </div>
                     <div className="text-xs text-gray-500">
-                      Won the prestigious Technology Excellence Award for
-                      developing cutting-edge solutions that revolutionize
-                      business processes.
+                      We started building our MVP and successfully completed the
+                      first phase of development.
                     </div>
                   </div>
                 </div>
