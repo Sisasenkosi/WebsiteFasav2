@@ -51,7 +51,7 @@ const ContactUs = () => {
               <input
                 type="text"
                 name="firstName"
-                className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full border border-gray-300 text-black rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder="First Name"
                 required
               />
@@ -63,7 +63,7 @@ const ContactUs = () => {
               <input
                 type="text"
                 name="lastName"
-                className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full border border-gray-300 text-black rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder="Last Name"
                 required
               />
@@ -75,7 +75,7 @@ const ContactUs = () => {
               <input
                 type="tel"
                 name="phone"
-                className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full border border-gray-300 text-black rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder="Phone Number"
                 required
               />
@@ -87,7 +87,7 @@ const ContactUs = () => {
               <input
                 type="email"
                 name="email"
-                className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full border border-gray-300 text-black rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder="Email"
                 required
               />
@@ -99,7 +99,7 @@ const ContactUs = () => {
             </label>
             <textarea
               name="message"
-              className="w-full border border-gray-300 rounded px-4 py-2 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="w-full border border-gray-300 text-black rounded px-4 py-2 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder="Your message..."
               required
             ></textarea>

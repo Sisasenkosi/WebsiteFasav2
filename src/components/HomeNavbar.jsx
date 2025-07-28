@@ -92,7 +92,7 @@ const HomeNavbar = () => {
         </Link>
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white rounded-b-lg shadow-lg flex flex-col items-start px-6 py-4 md:hidden animate-fade-in z-40">
+          <div className="absolute top-full left-0 w-full bg-white rounded-b-lg shadow-lg flex flex-col items-start px-6 py-4 md:hidden animate-fade-in z-[9999]">
             <NavLink
               to="/"
               className={({ isActive }) =>

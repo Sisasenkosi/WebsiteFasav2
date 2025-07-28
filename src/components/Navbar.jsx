@@ -96,7 +96,7 @@ const Header = () => {
         </button>
         {/* Mobile Dropdown Menu */}
         {menuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded-b-lg z-20 flex flex-col items-center py-4 md:hidden animate-fade-in-down">
+          <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded-b-lg z-[9999] flex flex-col items-center py-4 md:hidden animate-fade-in-down">
             <Link
               to="/"
               className="py-2 text-gray-700 font-medium w-full text-center hover:text-orange-500"
@@ -104,18 +104,20 @@ const Header = () => {
             >
               Home
             </Link>
-            <a
-              href="#"
+            <Link
+              to="/aboutus"
               className="py-2 text-gray-700 font-medium w-full text-center hover:text-orange-500"
+              onClick={() => setMenuOpen(false)}
             >
               About Us
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/services"
               className="py-2 text-gray-700 font-medium w-full text-center hover:text-orange-500"
+              onClick={() => setMenuOpen(false)}
             >
               Services
-            </a>
+            </Link>
             <Link
               to="/contactus"
               className="py-2 text-gray-700 font-medium w-full text-center hover:text-orange-500"
