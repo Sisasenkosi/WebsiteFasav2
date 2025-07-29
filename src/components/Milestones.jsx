@@ -76,7 +76,7 @@ const Milestones = () => {
                   <div className="bg-white rounded-xl shadow-lg p-6 w-full max-w-md border border-gray-100">
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-xs font-bold bg-blue-100 text-blue-700 px-2 py-1 rounded">
-                        LEADERSHIP
+                        RESEARCH
                       </span>
                       <span className="text-xs text-gray-400">NOV 2024</span>
                     </div>
@@ -90,6 +90,7 @@ const Milestones = () => {
                   </div>
                 </div>
               </motion.div>
+
               {/* Milestone 3 */}
               <motion.div
                 initial={{ opacity: 0, x: -60 }}
@@ -122,7 +123,71 @@ const Milestones = () => {
                 </div>
                 <div className="md:w-1/2 hidden md:flex"></div>
               </motion.div>
-              {/* Milestone 4 */}
+              {/* Milestone 4 - MVP Done */}
+              <motion.div
+                initial={{ opacity: 0, x: 60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.5 }}
+                className="flex items-center w-full relative"
+              >
+                <div className="md:w-1/2 hidden md:flex"></div>
+                <div className="flex flex-col items-center md:w-0 md:mx-8 z-10">
+                  <div className="bg-[#176ca7] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">
+                    <i className="fas fa-check-circle"></i>
+                  </div>
+                </div>
+                <div className="md:w-1/2 flex justify-start">
+                  <div className="bg-white rounded-xl shadow-lg p-6 w-full max-w-md border border-gray-100">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-bold bg-blue-100 text-blue-700 px-2 py-1 rounded">
+                        COMPLETION
+                      </span>
+                      <span className="text-xs text-gray-400">May 2025</span>
+                    </div>
+                    <div className="font-bold text-[#176ca7] text-lg mb-1">
+                      MVP Done
+                    </div>
+                    <div className="text-xs text-gray-500">
+                      The MVP was completed and is now ready for demonstration
+                      and further evaluation.
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+              {/* Milestone 5 - MVP Demo */}
+              <motion.div
+                initial={{ opacity: 0, x: -60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.55 }}
+                className="flex items-center w-full relative"
+              >
+                <div className="md:w-1/2 flex justify-end">
+                  <div className="bg-white rounded-xl shadow-lg p-6 w-full max-w-md border border-gray-100">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-bold bg-blue-100 text-blue-700 px-2 py-1 rounded">
+                        DEMO
+                      </span>
+                      <span className="text-xs text-gray-400">June 2025</span>
+                    </div>
+                    <div className="font-bold text-[#176ca7] text-lg mb-1">
+                      MVP Demo
+                    </div>
+                    <div className="text-xs text-gray-500">
+                      The MVP was successfully demonstrated to stakeholders,
+                      showcasing its features and capabilities.
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center md:w-0 md:mx-8 z-10">
+                  <div className="bg-[#176ca7] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">
+                    <i className="fas fa-tv"></i>
+                  </div>
+                </div>
+                <div className="md:w-1/2 hidden md:flex"></div>
+              </motion.div>
+              {/* Milestone 6 */}
               <motion.div
                 initial={{ opacity: 0, x: 60 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -142,13 +207,13 @@ const Milestones = () => {
                       <span className="text-xs font-bold bg-blue-100 text-blue-700 px-2 py-1 rounded">
                         SUCCESS
                       </span>
-                      <span className="text-xs text-gray-400">SEP 2024</span>
+                      <span className="text-xs text-gray-400">Aug 2025</span>
                     </div>
                     <div className="font-bold text-[#176ca7] text-lg mb-1">
                       Piloting
                     </div>
                     <div className="text-xs text-gray-500">
-                      Product roled out for testing with select customers,
+                      Product to be roled out for testing with select customers,
                       gathering valuable feedback for improvements.
                     </div>
                   </div>

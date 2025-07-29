@@ -48,6 +48,7 @@ const Footer = () => (
             <Link
               to="/contactus"
               className="bg-orange-700 text-white px-5 py-2 rounded-lg font-semibold shadow hover:bg-orange-800 transition"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Contact Us
             </Link>
@@ -138,17 +139,29 @@ const Footer = () => (
           <h4 className="font-semibold text-gray-800 mb-3">Top Links</h4>
           <ul className="space-y-2 text-gray-600 text-sm">
             <li>
-              <Link to="/aboutus" className="hover:text-orange-500">
+              <Link
+                to="/aboutus"
+                className="hover:text-orange-500"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/services" className="hover:text-orange-500">
+              <Link
+                to="/services"
+                className="hover:text-orange-500"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
                 Our Services
               </Link>
             </li>
             <li>
-              <Link to="/contactus" className="hover:text-orange-500">
+              <Link
+                to="/contactus"
+                className="hover:text-orange-500"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
                 Contact Us
               </Link>
             </li>

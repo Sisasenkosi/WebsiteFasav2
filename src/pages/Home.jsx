@@ -136,9 +136,6 @@ const Home = () => {
                   managed—with our intuitive, robust, and optimized smart locker
                   solutions.
                 </p>
-                <button className="bg-[#0e6399] text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
-                  Call Now For Service &gt;
-                </button>
               </div>
             </motion.div>
 
@@ -154,7 +151,7 @@ const Home = () => {
               <div className="bg-white rounded-xl shadow-2xl grid grid-cols-2 grid-rows-2 gap-4 w-full max-w-lg h-64 p-4 sm:p-8">
                 <div className="bg-gray-100 rounded-lg p-3 text-center shadow-md flex flex-col justify-center items-center">
                   <div className="text-lg sm:text-xl font-bold text-orange-500 mb-1">
-                    980+
+                    3+
                   </div>
                   <div className="text-gray-700 font-semibold text-xs">
                     Successful Services
@@ -162,7 +159,7 @@ const Home = () => {
                 </div>
                 <div className="bg-gray-100 rounded-lg p-3 text-center shadow-md flex flex-col justify-center items-center">
                   <div className="text-lg sm:text-xl font-bold text-orange-500 mb-1">
-                    900+
+                    50+
                   </div>
                   <div className="text-gray-700 font-semibold text-xs">
                     Satisfied Clients
@@ -170,7 +167,7 @@ const Home = () => {
                 </div>
                 <div className="bg-gray-100 rounded-lg p-3 text-center shadow-md flex flex-col justify-center items-center">
                   <div className="text-lg sm:text-xl font-bold text-orange-500 mb-1">
-                    50+
+                    3+
                   </div>
                   <div className="text-gray-700 font-semibold text-xs">
                     Locations
@@ -181,7 +178,7 @@ const Home = () => {
                     100%
                   </div>
                   <div className="text-gray-700 font-semibold text-xs">
-                    Quality Service
+                    Quality of Service
                   </div>
                 </div>
               </div>
@@ -258,6 +255,7 @@ const Home = () => {
             <Link
               to="/aboutus"
               className="bg-[#0e6399] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 w-full sm:w-1/2 md:w-1/3 transition inline-block text-center"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Find out more &gt;
             </Link>

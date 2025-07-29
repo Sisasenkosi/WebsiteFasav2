@@ -45,7 +45,7 @@ const About = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInUp}
-        transition={{ duration: 0.7, delay: 0.1 }}
+        transition={{ duration: 0.7, delay: 0.05 }}
       >
         <div className="w-full max-w-4xl flex flex-col md:flex-row gap-8">
           {/* Left: Text Card */}
