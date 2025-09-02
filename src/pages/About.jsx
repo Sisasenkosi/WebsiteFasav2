@@ -9,6 +9,7 @@ import tanya from '../assets/team/Tanya.jpeg';
 import tino from '../assets/team/Tino.jpeg';
 import trus from '../assets/team/trus.jpeg';
 import Milestones from '../components/Milestones';
+import Navbar from '../components/Navbar';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -26,7 +27,7 @@ const cardHover = {
 const About = () => {
   return (
     <div className="bg-white min-h-screen w-full">
-      <Header />
+      <Navbar />
       {/* Orange About Us Banner */}
 
       <section className="bg-orange-500 flex-row items-center justify-center py-2  w-full">
@@ -45,7 +46,7 @@ const About = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInUp}
-        transition={{ duration: 0.7, delay: 0.05 }}
+        transition={{ duration: 0.7, delay: 0.02 }}
       >
         <div className="w-full max-w-4xl flex flex-col md:flex-row gap-8">
           {/* Left: Text Card */}

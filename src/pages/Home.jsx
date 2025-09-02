@@ -24,10 +24,11 @@ const slideRight = {
 const Home = () => {
   return (
     <div className="bg-white min-h-screen w-full">
+      <HomeNavbar />
       {/* Hero Section */}
       <section className="relative bg-black text-white pt-4 pb-20 px-2 sm:px-4 md:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 bg-black/60 z-0" />
-        <HomeNavbar />
+
         <motion.div
           className="relative z-10 max-w-7xl mx-auto"
           initial="hidden"

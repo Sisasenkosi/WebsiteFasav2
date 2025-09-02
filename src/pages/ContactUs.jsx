@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Navbar';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 const ContactUs = () => {
   const formRef = useRef(null);
@@ -21,7 +22,7 @@ const ContactUs = () => {
 
   return (
     <div className="bg-white min-h-screen w-full">
-      <Header />
+      <Navbar />
       {/* Orange Section with Badge and Heading Side by Side on md+ */}
       <section className="bg-orange-500 flex-row items-center justify-center py-2  w-full">
         <span className="bg-white/30 text-white font-semibold px-4 py-2 rounded mb-4 tracking-widest text-xs md:text-sm">

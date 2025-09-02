@@ -6,7 +6,7 @@ const HomeNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 left-0 ">
+    <header className="sticky top-0 z-50  ">
       {/* Main navbar */}
       <nav className="bg-white rounded-lg shadow mx-2 md:mx-6 flex items-center justify-between px-4 md:px-6 py-3">
         {/* Logo */}

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logofasa.png';
 
-const Header = () => {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-orange-500">
+    <header className="sticky top-0 z-50 ">
       {/* Main Navbar */}
       <nav className="bg-white rounded-lg shadow mx-2 md:mx-6 flex items-center justify-between px-4 md:px-6 py-3">
         {/* Logo */}
@@ -139,4 +139,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

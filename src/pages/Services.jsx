@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Navbar';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 const services = [
   {
@@ -96,19 +97,18 @@ const solutions = [
 ];
 
 const Services = () => (
-  <div className="bg-white min-h-screen">
-    <div className="bg-orange-500 ">
-      <Header />
-      {/* Our Smart Locker Solutions */}
-      <section className="bg-orange-500 flex-row items-center justify-center py-2  w-full">
-        <span className="bg-white/30 text-white font-semibold px-4 py-2 rounded mb-4 tracking-widest text-xs md:text-sm">
-          SEAMLESS. SECURE. SMART.
-        </span>
-        <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
-          Services
-        </h1>
-      </section>
-    </div>
+  <div className="bg-white min-h-screen w-full">
+    <Navbar />
+    {/* Our Smart Locker Solutions */}
+    <section className="bg-orange-500 flex-row items-center justify-center py-2  w-full">
+      <span className="bg-white/30 text-white font-semibold px-4 py-2 rounded mb-4 tracking-widest text-xs md:text-sm">
+        SEAMLESS. SECURE. SMART.
+      </span>
+      <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
+        Services
+      </h1>
+    </section>
+
     <section className="py-14">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
