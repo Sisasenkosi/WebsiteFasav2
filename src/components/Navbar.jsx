@@ -7,9 +7,9 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-orange-500 ">
+    <header className="sticky top-0 z-50 bg-orange-500">
       {/* Main Navbar */}
-      <nav className="sticky bg-white rounded-lg shadow mx-2 md:mx-6  flex items-center justify-between px-4 md:px-6 py-3 relative">
+      <nav className="bg-white rounded-lg shadow mx-2 md:mx-6 flex items-center justify-between px-4 md:px-6 py-3">
         {/* Logo */}
         <div className="flex items-center ">
           <img className="h-12 w-auto mr-2" src={logo} alt="Fasamartech Logo" />

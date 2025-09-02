@@ -6,9 +6,9 @@ const HomeNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="absolute top-0 left-0 w-full z-30">
+    <header className="sticky top-0 z-50 left-0 ">
       {/* Main navbar */}
-      <nav className="sticky bg-white rounded-lg shadow mx-2 md:mx-6 flex items-center justify-between px-4 md:px-6 py-3 relative">
+      <nav className="bg-white rounded-lg shadow mx-2 md:mx-6 flex items-center justify-between px-4 md:px-6 py-3">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img src={logo} alt="Fasamartech Logo" className="h-12 w-auto mr-2" />
@@ -19,27 +19,28 @@ const HomeNavbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <svg
-            className="w-7 h-7"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-            viewBox="0 0 24 24"
-          >
-            {menuOpen ? (
+          {/* Hamburger icon: 3 lines when closed, X when open */}
+          {!menuOpen ? (
+            <span className="flex flex-col justify-center items-center w-7 h-7">
+              <span className="block w-6 h-0.5 bg-gray-800 mb-1 rounded transition-all"></span>
+              <span className="block w-6 h-0.5 bg-gray-800 mb-1 rounded transition-all"></span>
+              <span className="block w-6 h-0.5 bg-gray-800  rounded transition-all"></span>
+            </span>
+          ) : (
+            <svg
+              className="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 d="M6 18L18 6M6 6l12 12"
               />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 8h16M4 16h16"
-              />
-            )}
-          </svg>
+            </svg>
+          )}
         </button>
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-8">
@@ -148,7 +149,7 @@ const HomeNavbar = () => {
           </div>
         )}
       </nav>
-    </div>
+    </header>
   );
 };
 
