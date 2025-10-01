@@ -165,6 +165,15 @@ const Footer = () => (
                 Contact Us
               </Link>
             </li>
+            <li>
+              <Link
+                to="/delete-account"
+                className="hover:text-orange-500"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
+                Delete Account
+              </Link>
+            </li>
           </ul>
           {/* Newsletter and Copyright */}
           <div className="max-w-7xl mx-auto flex flex-col items-center justify-center pt-25 gap-4">

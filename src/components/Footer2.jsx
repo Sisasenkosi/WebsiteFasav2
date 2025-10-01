@@ -149,6 +149,15 @@ const Footer2 = () => (
                 Contact Us
               </Link>
             </li>
+            <li>
+              <Link
+                to="/delete-account"
+                className="hover:text-orange-500"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
+                Delete Account
+              </Link>
+            </li>
           </ul>
         </div>
         {/* Our Services */}
@@ -203,8 +212,26 @@ const Footer2 = () => (
 
       {/* Copyright centered below the line */}
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-center mt-4 border-t border-gray-200 pt-6 gap-4">
-        <div className="text-gray-500 text-xs text-center w-full flex justify-center">
-          &copy; {new Date().getFullYear()} fasasmartech. All Rights Reserved.
+        <div className="text-gray-500 text-xs text-center w-full flex flex-wrap items-center justify-center gap-1">
+          <span>
+            &copy; {new Date().getFullYear()} fasasmartech. All Rights Reserved.
+          </span>
+          <span className="px-2">|</span>
+          <Link
+            to="/terms-of-service"
+            className="hover:text-orange-500"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            Terms & Conditions
+          </Link>
+          <span className="px-2">|</span>
+          <Link
+            to="/privacy-policy"
+            className="hover:text-orange-500"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
