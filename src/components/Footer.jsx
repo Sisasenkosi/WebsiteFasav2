@@ -228,6 +228,22 @@ const Footer = () => (
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-center mt-4 border-t border-gray-200 pt-6 gap-4">
         <div className="text-gray-500 text-xs text-center w-full flex justify-center">
           &copy; {new Date().getFullYear()} fasasmartech. All Rights Reserved.
+          &nbsp; | &nbsp;
+          <Link
+            to="/terms-of-service"
+            className="hover:text-orange-500"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            Terms & Conditions
+          </Link>{' '}
+          &nbsp; | &nbsp;
+          <Link
+            to="/privacy-policy"
+            className="hover:text-orange-500"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>

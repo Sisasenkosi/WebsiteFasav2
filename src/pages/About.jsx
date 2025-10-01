@@ -137,7 +137,7 @@ const About = () => {
               </p>
               <div className="flex space-x-2 mt-1">
                 <a
-                  href="www.linkedin.com/in/fasa-smartech"
+                  href="http://linkedin.com/in/truswellnyamakanga"
                   className="text-gray-400 hover:text-[#176ca7] text-xl"
                 >
                   <i className="fab fa-linkedin"></i>
@@ -169,7 +169,7 @@ const About = () => {
               </p>
               <div className="flex space-x-2 mt-1">
                 <a
-                  href="www.linkedin.com/in/fasa-smartech"
+                  href="http://linkedin.com/in/farai-nechikwira-41139914a"
                   className="text-gray-400 hover:text-[#176ca7] text-xl"
                 >
                   <i className="fab fa-linkedin"></i>
@@ -229,7 +229,7 @@ const About = () => {
               <p className="text-xs text-gray-600 mb-1">Secretary</p>
               <div className="flex space-x-2 mt-1">
                 <a
-                  href="www.linkedin.com/in/fasa-smartech"
+                  href="http://linkedin.com/in/tanyaradzwa-murapa-58a915282"
                   className="text-gray-400 hover:text-[#176ca7] text-xl"
                 >
                   <i className="fab fa-linkedin"></i>
@@ -259,7 +259,7 @@ const About = () => {
               </p>
               <div className="flex space-x-2 mt-1">
                 <a
-                  href="www.linkedin.com/in/fasa-smartech"
+                  href="http://linkedin.com/in/brianzhou139"
                   className="text-gray-400 hover:text-[#176ca7] text-xl"
                 >
                   <i className="fab fa-linkedin"></i>
@@ -289,7 +289,7 @@ const About = () => {
               <p className="text-xs text-gray-600 mb-1">Administrator</p>
               <div className="flex space-x-2 mt-1">
                 <a
-                  href="www.linkedin.com/in/fasa-smartech"
+                  href="http://linkedin.com/in/tinotenda-samaringa"
                   className="text-gray-400 hover:text-[#176ca7] text-xl"
                 >
                   <i className="fab fa-linkedin"></i>
