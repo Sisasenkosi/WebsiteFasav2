@@ -122,7 +122,7 @@ const Footer = () => (
               Download our app
             </div>
             <a
-              href="https://play.google.com/store"
+              href="https://share.google/i52jPY4jPpP2KccA7"
               target="_blank"
               rel="noopener noreferrer"
             >

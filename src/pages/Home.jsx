@@ -68,12 +68,15 @@ const Home = () => {
                   for redelivery. Save time, reduce costs, and improve delivery
                   success rates.
                 </p>
-                <Link
-                  to="/contactus"
-                  className="bg-[#0e6399] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition inline-block"
+                <a
+                  href="https://share.google/i52jPY4jPpP2KccA7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-blue-600 to-sky-500 text-white px-8 py-4 rounded-full font-semibold hover:from-sky-500 hover:to-blue-700 shadow-lg shadow-blue-500/25 transition-transform transform hover:-translate-y-1 inline-flex items-center gap-3"
                 >
-                  Contact Us &gt;
-                </Link>
+                  <span>Click here to download our app</span>
+                  <span className="text-xl">↓</span>
+                </a>
               </div>
             </motion.div>
           </div>
@@ -162,7 +165,7 @@ const Home = () => {
                     50+
                   </div>
                   <div className="text-gray-700 font-semibold text-xs">
-                    Satisfied Clients
+                    App Downloads
                   </div>
                 </div>
                 <div className="bg-gray-100 rounded-lg p-3 text-center shadow-md flex flex-col justify-center items-center">
